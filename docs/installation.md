@@ -2,8 +2,7 @@
 
 ## Pre-requisites
 
-### Docker
-[Download Docker](https://docs.docker.com/get-docker/) for your operating system.
+1. **Docker**: [Download Docker](https://docs.docker.com/get-docker/) for your operating system.
 
 ## Steps
 
