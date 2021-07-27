@@ -1,10 +1,11 @@
-### Pre-requisites
+# Installation
 
-#### Docker
+## Pre-requisites
 
-Download docker for your operating system: https://docs.docker.com/get-docker/
+### Docker
+[Download Docker](https://docs.docker.com/get-docker/) for your operating system.
 
-## Installation steps
+## Steps
 
 1. Clone this repository and move to `portal-analytics` directory
    ```sh
@@ -15,9 +16,12 @@ Download docker for your operating system: https://docs.docker.com/get-docker/
    ```sh
    docker --version
    ```
-3. Copy `.env.example` as `.env`
-4. Update environment variables in your `.env` file based on your environment.
-5. Build the docker image and run the containers using just one command:
+3. Create the `.env` file
+   ```sh
+   cp .env.example .env
+   ```
+5. Update environment variables in your `.env` file based on your environment.
+6. Build the docker image and run the containers using just one command:
    ```sh
    docker-compose up -d --build
    ```
