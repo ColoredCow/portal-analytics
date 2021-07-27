@@ -1,11 +1,13 @@
-version: '2.2'
+version: "2.2"
 
 services:
   cube:
     image: cubejs/cube:latest
     ports:
-      - 4000:4000  # Cube.js API and Developer Playground
-      - 3000:3000  # Dashboard app, if created
+      # Cube.js API and Developer Playground
+      - ${PORT}:4000
+      # Dashboard app, if created
+      - ${APP_DASHBOARD_PORT}:3000
     env_file:
       - .env
     volumes:
