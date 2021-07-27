@@ -2,7 +2,9 @@
 
 This repository is responsible for generating analytics for the [ColoredCow Portal](https://github.com/ColoredCow/portal). It is powered by [Cube.js](https://github.com/cube-js/cube.js/).
 
-[An overview architecture](.docs/images/architecture.png)
+## Architecture overview
+
+<img src="./docs/images/architecture.png" height="350px" />
 
 ## Installation
 
