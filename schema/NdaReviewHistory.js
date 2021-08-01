@@ -1,5 +1,5 @@
 cube(`NdaReviewHistory`, {
-  sql: `SELECT * FROM cc_portal.nda_review_history`,
+  sql: `SELECT * FROM nda_review_history`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

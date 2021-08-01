@@ -1,5 +1,5 @@
 cube(`UserDocuments`, {
-  sql: `SELECT * FROM cc_portal.user_documents`,
+  sql: `SELECT * FROM user_documents`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

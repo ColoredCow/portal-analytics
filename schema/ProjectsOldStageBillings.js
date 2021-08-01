@@ -1,5 +1,5 @@
 cube(`ProjectsOldStageBillings`, {
-  sql: `SELECT * FROM cc_portal.projects_old_stage_billings`,
+  sql: `SELECT * FROM projects_old_stage_billings`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

@@ -1,5 +1,5 @@
 cube(`ProjectResource`, {
-  sql: `SELECT * FROM cc_portal.project_resource`,
+  sql: `SELECT * FROM project_resource`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

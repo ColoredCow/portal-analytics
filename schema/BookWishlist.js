@@ -1,5 +1,5 @@
 cube(`BookWishlist`, {
-  sql: `SELECT * FROM cc_portal.book_wishlist`,
+  sql: `SELECT * FROM book_wishlist`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

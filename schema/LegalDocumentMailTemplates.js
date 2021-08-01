@@ -1,5 +1,5 @@
 cube(`LegalDocumentMailTemplates`, {
-  sql: `SELECT * FROM cc_portal.legal_document_mail_templates`,
+  sql: `SELECT * FROM legal_document_mail_templates`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

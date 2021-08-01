@@ -1,5 +1,5 @@
 cube(`Migrations`, {
-  sql: `SELECT * FROM cc_portal.migrations`,
+  sql: `SELECT * FROM migrations`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

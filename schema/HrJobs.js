@@ -1,5 +1,5 @@
 cube(`HrJobs`, {
-  sql: `SELECT * FROM cc_portal.hr_jobs`,
+  sql: `SELECT * FROM hr_jobs`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

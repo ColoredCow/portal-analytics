@@ -1,5 +1,5 @@
 cube(`HrEvaluationSegments`, {
-  sql: `SELECT * FROM cc_portal.hr_evaluation_segments`,
+  sql: `SELECT * FROM hr_evaluation_segments`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

@@ -1,5 +1,5 @@
 cube(`LibraryBookCategory`, {
-  sql: `SELECT * FROM cc_portal.library_book_category`,
+  sql: `SELECT * FROM library_book_category`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

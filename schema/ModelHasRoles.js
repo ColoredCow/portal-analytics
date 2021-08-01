@@ -1,5 +1,5 @@
 cube(`ModelHasRoles`, {
-  sql: `SELECT * FROM cc_portal.model_has_roles`,
+  sql: `SELECT * FROM model_has_roles`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

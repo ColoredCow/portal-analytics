@@ -1,5 +1,5 @@
 cube(`SalaryConfigurations`, {
-  sql: `SELECT * FROM cc_portal.salary_configurations`,
+  sql: `SELECT * FROM salary_configurations`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here
