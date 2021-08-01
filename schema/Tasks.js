@@ -1,5 +1,5 @@
 cube(`Tasks`, {
-  sql: `SELECT * FROM cc_portal.tasks`,
+  sql: `SELECT * FROM tasks`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

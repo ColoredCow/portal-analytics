@@ -1,5 +1,5 @@
 cube(`ModelHasTags`, {
-  sql: `SELECT * FROM cc_portal.model_has_tags`,
+  sql: `SELECT * FROM model_has_tags`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

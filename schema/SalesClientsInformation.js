@@ -1,5 +1,5 @@
 cube(`SalesClientsInformation`, {
-  sql: `SELECT * FROM cc_portal.sales_clients_information`,
+  sql: `SELECT * FROM sales_clients_information`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

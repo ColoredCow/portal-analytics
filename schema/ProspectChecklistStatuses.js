@@ -1,5 +1,5 @@
 cube(`ProspectChecklistStatuses`, {
-  sql: `SELECT * FROM cc_portal.prospect_checklist_statuses`,
+  sql: `SELECT * FROM prospect_checklist_statuses`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

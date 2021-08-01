@@ -1,5 +1,5 @@
 cube(`ProspectCalendarMeeting`, {
-  sql: `SELECT * FROM cc_portal.prospect_calendar_meeting`,
+  sql: `SELECT * FROM prospect_calendar_meeting`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

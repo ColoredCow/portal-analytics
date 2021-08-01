@@ -1,5 +1,5 @@
 cube(`Settings`, {
-  sql: `SELECT * FROM cc_portal.settings`,
+  sql: `SELECT * FROM settings`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

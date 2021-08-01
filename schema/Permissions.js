@@ -1,5 +1,5 @@
 cube(`Permissions`, {
-  sql: `SELECT * FROM cc_portal.permissions`,
+  sql: `SELECT * FROM permissions`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

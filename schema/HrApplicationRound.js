@@ -1,5 +1,5 @@
 cube(`HrApplicationRound`, {
-  sql: `SELECT * FROM cc_portal.hr_application_round`,
+  sql: `SELECT * FROM hr_application_round`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

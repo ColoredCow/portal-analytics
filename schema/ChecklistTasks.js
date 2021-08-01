@@ -1,5 +1,5 @@
 cube(`ChecklistTasks`, {
-  sql: `SELECT * FROM cc_portal.checklist_tasks`,
+  sql: `SELECT * FROM checklist_tasks`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

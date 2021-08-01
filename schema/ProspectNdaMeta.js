@@ -1,5 +1,5 @@
 cube(`ProspectNdaMeta`, {
-  sql: `SELECT * FROM cc_portal.prospect_nda_meta`,
+  sql: `SELECT * FROM prospect_nda_meta`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here
