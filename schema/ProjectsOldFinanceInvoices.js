@@ -26,7 +26,11 @@ cube(`ProjectsOldFinanceInvoices`, {
   },
   
   dimensions: {
-    
+    id: {
+      sql: `CONCAT(${CUBE}.project_id, ${CUBE}.finance_invoice_id)`,
+      type: `number`,
+      primaryKey: true
+    },
   },
   
   dataSource: `default`

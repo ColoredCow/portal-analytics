@@ -26,7 +26,11 @@ cube(`SalesAreaQuestions`, {
   },
   
   dimensions: {
-    
+    id: {
+      sql: `CONCAT(${CUBE}.sales_area_id, ${CUBE}.sales_question_id)`,
+      type: `number`,
+      primaryKey: true
+    },
   },
   
   dataSource: `default`

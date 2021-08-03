@@ -26,7 +26,11 @@ cube(`LibraryBookCategory`, {
   },
   
   dimensions: {
-    
+    id: {
+      sql: `CONCAT(${CUBE}.book_category_id, ${CUBE}.library_book_id)`,
+      type: `number`,
+      primaryKey: true
+    },
   },
   
   dataSource: `default`

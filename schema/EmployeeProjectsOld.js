@@ -26,6 +26,12 @@ cube(`EmployeeProjectsOld`, {
   },
   
   dimensions: {
+    id: {
+      sql: `CONCAT(${CUBE}.employee_id, ${CUBE}.project_id)`,
+      type: `number`,
+      primaryKey: true
+    },
+
     contributionType: {
       sql: `contribution_type`,
       type: `string`
