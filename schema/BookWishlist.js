@@ -26,7 +26,11 @@ cube(`BookWishlist`, {
   },
   
   dimensions: {
-    
+    id: {
+      sql: `CONCAT(${CUBE}.user_id, ${CUBE}.library_book_id)`,
+      type: `number`,
+      primaryKey: true
+    },
   },
   
   dataSource: `default`

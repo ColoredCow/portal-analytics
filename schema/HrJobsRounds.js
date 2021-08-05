@@ -26,6 +26,11 @@ cube(`HrJobsRounds`, {
   },
   
   dimensions: {
+    id: {
+      sql: `CONCAT(${CUBE}.hr_job_id, ${CUBE}.hr_round_id)`,
+      type: `number`,
+      primaryKey: true
+    },
     
   },
   

@@ -26,7 +26,11 @@ cube(`RoleHasPermissions`, {
   },
   
   dimensions: {
-    
+    id: {
+      sql: `CONCAT(${CUBE}.permission_id, ${CUBE}.role_id)`,
+      type: `number`,
+      primaryKey: true
+    },
   },
   
   dataSource: `default`

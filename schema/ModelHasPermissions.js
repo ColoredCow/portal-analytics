@@ -21,6 +21,12 @@ cube(`ModelHasPermissions`, {
   },
   
   dimensions: {
+    id: {
+      sql: `CONCAT(${CUBE}.permission_id, ${CUBE}.model_id, ${CUBE}.model_type)`,
+      type: `number`,
+      primaryKey: true
+    },
+
     modelType: {
       sql: `model_type`,
       type: `string`
