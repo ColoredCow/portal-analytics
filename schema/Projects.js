@@ -1,5 +1,5 @@
 cube(`Projects`, {
-  sql: `SELECT * FROM projects`,
+  sql: `SELECT * FROM   projects`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here
@@ -27,6 +27,11 @@ cube(`Projects`, {
       primaryKey: true
     },
     
+    type: {
+      sql: `type`,
+      type: `string`
+    },
+    
     name: {
       sql: `name`,
       type: `string`
@@ -39,6 +44,11 @@ cube(`Projects`, {
     
     status: {
       sql: `status`,
+      type: `string`
+    },
+    
+    effortSheetUrl: {
+      sql: `effort_sheet_url`,
       type: `string`
     },
     

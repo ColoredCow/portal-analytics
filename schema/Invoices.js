@@ -1,5 +1,5 @@
 cube(`Invoices`, {
-  sql: `SELECT * FROM invoices`,
+  sql: `SELECT * FROM   invoices`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here
@@ -21,7 +21,7 @@ cube(`Invoices`, {
   measures: {
     count: {
       type: `count`,
-      drillMembers: [id, createdAt, updatedAt, receivableDate]
+      drillMembers: [id, amountPaid, createdAt, updatedAt, receivableDate]
     }
   },
   
@@ -62,6 +62,36 @@ cube(`Invoices`, {
       type: `string`
     },
     
+    amountPaid: {
+      sql: `amount_paid`,
+      type: `string`
+    },
+    
+    bankCharges: {
+      sql: `bank_charges`,
+      type: `string`
+    },
+    
+    conversionRateDiff: {
+      sql: `conversion_rate_diff`,
+      type: `string`
+    },
+    
+    tds: {
+      sql: `tds`,
+      type: `string`
+    },
+    
+    tdsPercentage: {
+      sql: `tds_percentage`,
+      type: `string`
+    },
+    
+    currencyTransactionCharge: {
+      sql: `currency_transaction_charge`,
+      type: `string`
+    },
+    
     createdAt: {
       sql: `created_at`,
       type: `time`
@@ -79,6 +109,11 @@ cube(`Invoices`, {
     
     dueOn: {
       sql: `due_on`,
+      type: `time`
+    },
+    
+    paymentAt: {
+      sql: `payment_at`,
       type: `time`
     },
     

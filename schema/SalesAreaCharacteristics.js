@@ -1,5 +1,5 @@
 cube(`SalesAreaCharacteristics`, {
-  sql: `SELECT * FROM sales_area_characteristics`,
+  sql: `SELECT * FROM   sales_area_characteristics`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

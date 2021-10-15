@@ -1,5 +1,5 @@
-cube(`HrApplicationSegments`, {
-  sql: `SELECT * FROM   hr_application_segments`,
+cube(`ProjectOldStageBillings`, {
+  sql: `SELECT * FROM   project_old_stage_billings`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here
@@ -7,13 +7,23 @@ cube(`HrApplicationSegments`, {
   },
   
   joins: {
-    HrEvaluationSegments: {
-      sql: `${CUBE}.evaluation_segment_id = ${HrEvaluationSegments}.id`,
+    FinanceInvoices: {
+      sql: `${CUBE}.finance_invoice_id = ${FinanceInvoices}.id`,
       relationship: `belongsTo`
     },
     
-    HrApplicationRound: {
-      sql: `${CUBE}.application_round_id = ${HrApplicationRound}.id`,
+    ProjectOldFinanceInvoices: {
+      sql: `${CUBE}.finance_invoice_id = ${ProjectOldFinanceInvoices}.finance_invoice_id`,
+      relationship: `belongsTo`
+    },
+    
+    ProjectsOldFinanceInvoices: {
+      sql: `${CUBE}.finance_invoice_id = ${ProjectsOldFinanceInvoices}.finance_invoice_id`,
+      relationship: `belongsTo`
+    },
+    
+    Invoices: {
+      sql: `${CUBE}.invoice_id = ${Invoices}.id`,
       relationship: `belongsTo`
     }
   },
@@ -30,11 +40,6 @@ cube(`HrApplicationSegments`, {
       sql: `id`,
       type: `number`,
       primaryKey: true
-    },
-    
-    comments: {
-      sql: `comments`,
-      type: `string`
     },
     
     createdAt: {

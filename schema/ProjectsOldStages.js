@@ -1,5 +1,5 @@
 cube(`ProjectsOldStages`, {
-  sql: `SELECT * FROM projects_old_stages`,
+  sql: `SELECT * FROM   projects_old_stages`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

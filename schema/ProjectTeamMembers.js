@@ -1,5 +1,5 @@
-cube(`Tasks`, {
-  sql: `SELECT * FROM   tasks`,
+cube(`ProjectTeamMembers`, {
+  sql: `SELECT * FROM   project_team_members`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here
@@ -16,7 +16,7 @@ cube(`Tasks`, {
   measures: {
     count: {
       type: `count`,
-      drillMembers: [id, name, createdAt, updatedAt]
+      drillMembers: [id, createdAt, updatedAt]
     }
   },
   
@@ -27,18 +27,8 @@ cube(`Tasks`, {
       primaryKey: true
     },
     
-    name: {
-      sql: `name`,
-      type: `string`
-    },
-    
-    type: {
-      sql: `type`,
-      type: `string`
-    },
-    
-    comment: {
-      sql: `comment`,
+    designation: {
+      sql: `designation`,
       type: `string`
     },
     
@@ -52,8 +42,13 @@ cube(`Tasks`, {
       type: `time`
     },
     
-    workedOn: {
-      sql: `worked_on`,
+    startedOn: {
+      sql: `started_on`,
+      type: `time`
+    },
+    
+    endedOn: {
+      sql: `ended_on`,
       type: `time`
     }
   },

@@ -1,5 +1,5 @@
 cube(`LibraryBooks`, {
-  sql: `SELECT * FROM library_books`,
+  sql: `SELECT * FROM   library_books`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

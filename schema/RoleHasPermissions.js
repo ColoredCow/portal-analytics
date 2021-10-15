@@ -1,5 +1,5 @@
 cube(`RoleHasPermissions`, {
-  sql: `SELECT * FROM role_has_permissions`,
+  sql: `SELECT * FROM   role_has_permissions`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

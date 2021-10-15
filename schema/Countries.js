@@ -1,5 +1,5 @@
 cube(`Countries`, {
-  sql: `SELECT * FROM countries`,
+  sql: `SELECT * FROM   countries`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

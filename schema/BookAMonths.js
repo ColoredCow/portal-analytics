@@ -1,5 +1,5 @@
 cube(`BookAMonths`, {
-  sql: `SELECT * FROM book_a_months`,
+  sql: `SELECT * FROM   book_a_months`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

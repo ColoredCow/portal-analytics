@@ -1,5 +1,5 @@
-cube(`Tasks`, {
-  sql: `SELECT * FROM   tasks`,
+cube(`ProjectOldStages`, {
+  sql: `SELECT * FROM   project_old_stages`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here
@@ -16,7 +16,12 @@ cube(`Tasks`, {
   measures: {
     count: {
       type: `count`,
-      drillMembers: [id, name, createdAt, updatedAt]
+      drillMembers: [id, name, createdAt, updatedAt, startDate, endDate]
+    },
+    
+    cost: {
+      sql: `cost`,
+      type: `sum`
     }
   },
   
@@ -37,8 +42,8 @@ cube(`Tasks`, {
       type: `string`
     },
     
-    comment: {
-      sql: `comment`,
+    currencyCost: {
+      sql: `currency_cost`,
       type: `string`
     },
     
@@ -52,8 +57,13 @@ cube(`Tasks`, {
       type: `time`
     },
     
-    workedOn: {
-      sql: `worked_on`,
+    startDate: {
+      sql: `start_date`,
+      type: `time`
+    },
+    
+    endDate: {
+      sql: `end_date`,
       type: `time`
     }
   },
