@@ -27,6 +27,11 @@ cube(`ProjectTeamMembers`, {
       primaryKey: true
     },
     
+    project_id: {
+      sql: `project_id`,
+      type: `number`,
+    },
+    
     designation: {
       sql: `designation`,
       type: `string`

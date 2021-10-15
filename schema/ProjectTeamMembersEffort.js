@@ -14,13 +14,23 @@ cube(`ProjectTeamMembersEffort`, {
   },
   
   measures: {
-    count: {
-      type: `count`,
-      drillMembers: [id, createdAt, updatedAt]
+    project_monthly_hours: {
+      sql: `actual_effort`,
+      type: `sum`,
     }
   },
   
   dimensions: {
+    project_team_member_id: {
+      sql: `project_team_member_id`,
+      type: `number`,
+    },
+
+    project_id: {
+      sql: `${ProjectTeamMembers}.project_id`,
+      type: `number`,
+    },
+    
     id: {
       sql: `id`,
       type: `number`,
