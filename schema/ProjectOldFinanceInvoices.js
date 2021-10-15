@@ -31,7 +31,11 @@ cube(`ProjectOldFinanceInvoices`, {
   },
   
   dimensions: {
-    
+    id: {
+      sql: `id`,
+      type: `number`,
+      primaryKey: true
+    }
   },
   
   dataSource: `default`
