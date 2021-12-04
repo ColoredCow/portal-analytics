@@ -1,5 +1,5 @@
 cube(`ProjectsOldStageBillings`, {
-  sql: `SELECT * FROM projects_old_stage_billings`,
+  sql: `SELECT * FROM   projects_old_stage_billings`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here
@@ -9,6 +9,11 @@ cube(`ProjectsOldStageBillings`, {
   joins: {
     FinanceInvoices: {
       sql: `${CUBE}.finance_invoice_id = ${FinanceInvoices}.id`,
+      relationship: `belongsTo`
+    },
+    
+    ProjectOldFinanceInvoices: {
+      sql: `${CUBE}.finance_invoice_id = ${ProjectOldFinanceInvoices}.finance_invoice_id`,
       relationship: `belongsTo`
     },
     

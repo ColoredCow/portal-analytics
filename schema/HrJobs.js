@@ -1,5 +1,5 @@
 cube(`HrJobs`, {
-  sql: `SELECT * FROM hr_jobs`,
+  sql: `SELECT * FROM   hr_jobs`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here
@@ -13,7 +13,7 @@ cube(`HrJobs`, {
   measures: {
     count: {
       type: `count`,
-      drillMembers: [id, title, createdAt, updatedAt]
+      drillMembers: [id, title, createdAt, updatedAt, startDate, endDate]
     }
   },
   
@@ -36,6 +36,11 @@ cube(`HrJobs`, {
     
     type: {
       sql: `type`,
+      type: `string`
+    },
+    
+    domain: {
+      sql: `domain`,
       type: `string`
     },
     
@@ -76,6 +81,16 @@ cube(`HrJobs`, {
     
     updatedAt: {
       sql: `updated_at`,
+      type: `time`
+    },
+    
+    startDate: {
+      sql: `start_date`,
+      type: `time`
+    },
+    
+    endDate: {
+      sql: `end_date`,
       type: `time`
     },
     

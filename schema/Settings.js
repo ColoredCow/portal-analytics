@@ -1,5 +1,5 @@
 cube(`Settings`, {
-  sql: `SELECT * FROM settings`,
+  sql: `SELECT * FROM   settings`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

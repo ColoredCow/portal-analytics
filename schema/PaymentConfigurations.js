@@ -1,5 +1,5 @@
 cube(`PaymentConfigurations`, {
-  sql: `SELECT * FROM payment_configurations`,
+  sql: `SELECT * FROM   payment_configurations`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

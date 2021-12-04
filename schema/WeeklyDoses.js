@@ -1,5 +1,5 @@
 cube(`WeeklyDoses`, {
-  sql: `SELECT * FROM weekly_doses`,
+  sql: `SELECT * FROM   weekly_doses`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

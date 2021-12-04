@@ -1,5 +1,5 @@
 cube(`NdaMeta`, {
-  sql: `SELECT * FROM nda_meta`,
+  sql: `SELECT * FROM   nda_meta`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

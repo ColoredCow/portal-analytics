@@ -1,5 +1,5 @@
 cube(`CalendarMeetings`, {
-  sql: `SELECT * FROM calendar_meetings`,
+  sql: `SELECT * FROM   calendar_meetings`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

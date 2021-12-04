@@ -1,5 +1,5 @@
 cube(`Comments`, {
-  sql: `SELECT * FROM comments`,
+  sql: `SELECT * FROM   comments`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

@@ -1,5 +1,5 @@
 cube(`Permissions`, {
-  sql: `SELECT * FROM permissions`,
+  sql: `SELECT * FROM   permissions`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

@@ -1,5 +1,5 @@
 cube(`ProspectChecklistMeta`, {
-  sql: `SELECT * FROM prospect_checklist_meta`,
+  sql: `SELECT * FROM   prospect_checklist_meta`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

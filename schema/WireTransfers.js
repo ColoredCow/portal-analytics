@@ -1,5 +1,5 @@
 cube(`WireTransfers`, {
-  sql: `SELECT * FROM wire_transfers`,
+  sql: `SELECT * FROM   wire_transfers`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

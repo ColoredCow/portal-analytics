@@ -1,5 +1,5 @@
 cube(`LibraryBookCategory`, {
-  sql: `SELECT * FROM library_book_category`,
+  sql: `SELECT * FROM   library_book_category`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here
@@ -30,7 +30,7 @@ cube(`LibraryBookCategory`, {
       sql: `CONCAT(${CUBE}.book_category_id, ${CUBE}.library_book_id)`,
       type: `number`,
       primaryKey: true
-    },
+    }
   },
   
   dataSource: `default`

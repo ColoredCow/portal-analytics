@@ -1,5 +1,5 @@
 cube(`HrApplicationRoundReviews`, {
-  sql: `SELECT * FROM hr_application_round_reviews`,
+  sql: `SELECT * FROM   hr_application_round_reviews`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

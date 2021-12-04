@@ -1,5 +1,5 @@
-cube(`RoleHasPermissions`, {
-  sql: `SELECT * FROM   role_has_permissions`,
+cube(`ProjectOldFinanceInvoices`, {
+  sql: `SELECT * FROM   project_old_finance_invoices`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here
@@ -7,13 +7,18 @@ cube(`RoleHasPermissions`, {
   },
   
   joins: {
-    Permissions: {
-      sql: `${CUBE}.permission_id = ${Permissions}.id`,
+    Projects: {
+      sql: `${CUBE}.project_id = ${Projects}.id`,
       relationship: `belongsTo`
     },
     
-    Roles: {
-      sql: `${CUBE}.role_id = ${Roles}.id`,
+    FinanceInvoices: {
+      sql: `${CUBE}.finance_invoice_id = ${FinanceInvoices}.id`,
+      relationship: `belongsTo`
+    },
+    
+    ProjectsOldFinanceInvoices: {
+      sql: `${CUBE}.finance_invoice_id = ${ProjectsOldFinanceInvoices}.finance_invoice_id`,
       relationship: `belongsTo`
     }
   },
@@ -27,10 +32,10 @@ cube(`RoleHasPermissions`, {
   
   dimensions: {
     id: {
-      sql: `CONCAT(${CUBE}.permission_id, ${CUBE}.role_id)`,
+      sql: `id`,
       type: `number`,
       primaryKey: true
-    },
+    }
   },
   
   dataSource: `default`

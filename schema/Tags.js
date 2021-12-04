@@ -1,5 +1,5 @@
 cube(`Tags`, {
-  sql: `SELECT * FROM tags`,
+  sql: `SELECT * FROM   tags`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here
@@ -13,7 +13,7 @@ cube(`Tags`, {
   measures: {
     count: {
       type: `count`,
-      drillMembers: [id, name, createdAt, updatedAt]
+      drillMembers: [id, tagName, createdAt, updatedAt]
     }
   },
   
@@ -24,8 +24,8 @@ cube(`Tags`, {
       primaryKey: true
     },
     
-    name: {
-      sql: `name`,
+    tagName: {
+      sql: `tag_name`,
       type: `string`
     },
     

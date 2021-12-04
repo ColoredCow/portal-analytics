@@ -1,5 +1,5 @@
 cube(`ModuleChecklistTasks`, {
-  sql: `SELECT * FROM module_checklist_tasks`,
+  sql: `SELECT * FROM   module_checklist_tasks`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

@@ -1,5 +1,5 @@
 cube(`BookWishlist`, {
-  sql: `SELECT * FROM book_wishlist`,
+  sql: `SELECT * FROM   book_wishlist`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here
@@ -30,7 +30,7 @@ cube(`BookWishlist`, {
       sql: `CONCAT(${CUBE}.user_id, ${CUBE}.library_book_id)`,
       type: `number`,
       primaryKey: true
-    },
+    } 
   },
   
   dataSource: `default`

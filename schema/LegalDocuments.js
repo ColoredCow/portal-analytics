@@ -1,5 +1,5 @@
 cube(`LegalDocuments`, {
-  sql: `SELECT * FROM legal_documents`,
+  sql: `SELECT * FROM   legal_documents`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here

@@ -1,5 +1,5 @@
 cube(`SkillSets`, {
-  sql: `SELECT * FROM skill_sets`,
+  sql: `SELECT * FROM   skill_sets`,
   
   preAggregations: {
     // Pre-Aggregations definitions go here
